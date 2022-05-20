@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS</title>
+
+    <!-- linking style sheet below underneath title, in title section -->
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+  <!-- this is embedded CSS, write in head section -->
+  <!-- type style, then reference what you want styled, here we want H2 values see below, 
+put H2 and curly brackets -->
+  <!-- Embedded CSS applies to all H2 tags in this case, there are two H2 see below -->
+  <!-- NOTE: EVERYTHING IS READ TOP TO BOTTOM, SO CODE WRITTEN LATER, AFTERWARDS OVERIDES INITIAL CODES -->
+<!-- in the head section -->
+  <style>
+    H1,
+    h2 {
+      background-color: rgb(0, 0, 255);
+      font-size: medium;
+      color: beige;
+      text-align: right;
+    }
+  </style>
+
+  <body>
+    <!-- Three types of CSS -->
+
+    <!-- 1st type of CSS -->
+    <!-- Inline CSS -->
+    <!-- The "style" is to start the CSS -->
+    <!-- each property is separated by a ; eg, "color" is one property and "border" is another -->
+
+    <h1 style="color: red; border: 2px black solid">This is my heading</h1>
+
+    <!-- 2nd type of CSS -->
+    <!-- Embedded CSS or Internal CSS-->
+    <!-- Put the style tag after <head> and before the <body> -->
+
+    <h2>This is my second heading</h2>
+    <h2>THIS IS MY SECOND SECOND LONGER HEADING</h2>
+
+    <!-- 3rd type of CSS -->
+    <!-- 
+write all styling in a external file and connect it to our file - 
+the file is style.css and in Folder is CSS -->
+<H3>////////////////////</H3>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod beatae
+      assumenda eos vel facere, in suscipit ab dignissimos ut possimus maxime
+      recusandae, provident odit reiciendis omnis optio? Quia illum dolorem
+      officiis.
+    </p>
+<H3>------------------------</H3>
+  </body>
+</html>

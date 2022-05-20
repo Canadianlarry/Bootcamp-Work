@@ -1,0 +1,18 @@
+/* each tag needs to be written with {}, eg. body {}, p{}, 
+if want the same style for the same tag, eg. h3 and p, then separate with comma  */
+body {
+  background-color: bisque;
+}
+
+h3,
+p {
+  color: crimson;
+  text-align: center;
+}
+.container1 {
+  font-size: 20px;
+}
+
+.container1 p {
+  color: blue;
+}
