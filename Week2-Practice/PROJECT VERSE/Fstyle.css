@@ -1,0 +1,36 @@
+.fcontainer{
+border: 2px solid green;
+height: 600px;
+display: flex;
+/* flex-direction: row; */
+
+/* popular */
+justify-content: center;
+/* justify-content: flex-end; */
+
+/* align-items:center; */
+
+/* popular */
+/* this wraps all items, like wrap text and images */
+flex-wrap: wrap;
+
+/* popular */
+/* flex-flow:column-wrap; */
+
+}
+.fitem{
+background-color:cornflowerblue;
+border:2px black;
+margin:50px;
+width: 100px;
+height: 100px;
+
+}
+
+.item1{
+align-self:flex-end;
+
+} 
+#five{
+    flex-grow: 2;
+} 

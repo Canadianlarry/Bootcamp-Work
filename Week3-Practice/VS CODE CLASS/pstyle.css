@@ -1,0 +1,41 @@
+
+
+    .example{
+        width:300px;
+        height:300px;
+        background-color: red;
+        animation-name: example;
+        animation-duration: 4s;
+        
+        /* name of animation */
+        animation-name: panda;
+        /* delay for beginning your animation */
+        animation-delay: 5s;
+        /* times animation runs */
+        animation-iteration-count: 4;
+        /* speed curve = linear, ease, ease, ease-in, ease-out */
+        animation-timing-function: ease;
+        /* play forward or backwards */
+        animation-direction: reverse;
+        /* style of a target element when animation is not playing
+        =none, forwards, backwards, both */
+
+
+
+    }
+/* 
+    @keyframes example{
+        from{
+          background-color: red;
+        }
+        to{
+          background-color: yellow;
+        } */
+
+
+        @keyframes example{
+            0% {background-color: red;}
+            30% {background-color: orange;}
+            50% {background-color: green;}
+            100% {background-color: blue;}
+        }

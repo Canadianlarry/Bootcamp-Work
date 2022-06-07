@@ -1,0 +1,40 @@
+/* This is universal selector */
+
+/* changes all the margins or padding, initialising default values, can change background color */
+
+*{
+
+margin: 1px;
+padding: 1px;
+/* background-color: black; */
+/* this is from google font CSS rules to specify families */
+font-family: 'Work Sans', sans-serif;
+
+/* if want to import and not link the font, just put the import information in style sheet and 
+remove the link from the Google Font html page */
+
+/* positioning absolute */
+background-color: bisque;
+}
+.container{
+
+    position: relative;
+    border: 3px solid purple ;
+
+    color: red;
+    top: 150px;
+    bottom: 150px;
+    left: 50px;
+
+}
+.container2{
+
+    position: absolute;
+    border: 3px solid green ;
+
+    color: cornflowerblue;
+    top: 150px;
+    bottom: 150px;
+    left: 50px;
+
+}

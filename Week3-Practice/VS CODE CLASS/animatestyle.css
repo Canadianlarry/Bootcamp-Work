@@ -1,0 +1,82 @@
+
+
+/* note: content is the "This is my  animated box" padding is around the content, 
+border is around the padding, and margin is around the border*/
+
+body{
+  color:black;
+}
+.container{
+  
+  margin: 100px;
+  border:5px solid blue;
+  /* display:inline; */
+  padding: 100px;;
+}
+.animatebox{
+margin: 50px 20px 50px 30px;
+border:20px solid gray;
+padding: 30px 50px 20px 20px;
+align-items: center;
+background-color: chocolate;
+color:antiquewhite;
+width:100px;
+height:200px;
+ animation-name: boxchange;
+ animation-duration: 4s;
+ animation-iteration-count:infinite;
+ animation-delay: 0s;
+}
+
+@keyframes boxchange{
+from{
+  background-color: chocolate;
+}
+to{
+  background-color: aqua;
+  width:300px;
+}
+}
+.animatebox1{
+  margin: 50px 20px 50px 30px;
+  border:20px solid gray;
+  padding: 30px 50px 20px 20px;
+  align-items: center;
+  background-color: rgb(30, 210, 114);
+  color:antiquewhite;
+  width:200px;
+  height:300px;
+  animation:boxchange2 0.5s infinite;
+
+}
+
+@keyframes boxchange2{
+  100%{
+      transform: translate(50px,100px);}
+}
+
+@keyframes boxchange2{
+
+  100%{
+      transform: rotate(360deg);}
+} 
+
+
+
+/* @keyframes boxchange{
+
+0%{
+  background-color:black;
+}
+50%{
+  background-color: red;
+  width:300px;
+  height: 400px;
+}
+100%{
+  background-color: aliceblue;
+  width:200px;
+}
+
+} */
+

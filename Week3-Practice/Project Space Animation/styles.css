@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #151515;
+  height: 100vh;
+  width: 100vw;
+  padding: 5px;
+}
+.scene {
+  width: 100%;
+  height: 100%;
+  background-image: url("/background.png");
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+.scene img {
+  position: absolute;
+}
+
+.moon {
+  bottom: -50px;
+  right: -40px;
+  width: 400px;
+
+  animation: moon-spin 0.5s infinite linear forwards;
+}
+
+.stars {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  animation: star-rotate 100s infinite forwards;
+}
+.astronaut {
+  top: 200px;
+  right: 30px;
+  width: 200px;
+
+  animation: astronaut-move 10s forwards infinite;
+}
+
+.ship {
+  top: 60px;
+  left: 30%;
+  width: 150px;
+  transform: scale(0);
+  animation: ship-move 10s forwards infinite;
+}
+
+@keyframes astronaut-move {
+  to {
+    transform: translate(-300px, -100px) rotate(360deg);
+  }
+}
+
+@keyframes moon-spin {
+  to {
+    transform: rotate(60deg);
+  }
+}
+
+@keyframes star-rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes ship-move {
+  25% {
+    transform: scale(0.5) translate(-150px, -25px);
+  }
+  50% {
+    transform: scale(1) translate(250px, 300px);
+  }
+  100% {
+    transform: scale(4) translate(250px, 300px);
+  }
+}
+/* note: scale increase, space ship gets bigger */
