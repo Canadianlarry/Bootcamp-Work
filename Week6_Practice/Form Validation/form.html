@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<title>Example</title>
+<script defer src="validation.js"></script>
+</head>
+ <body>
+ <form>
+<!-- required, maxLength 20 -->
+<div>
+    <label for="maxLength">required, maxLength 20</label>
+    <input id="maxLength" class="required" type="text">
+    <p id="maxLength-error" style="color: red;"></p>
+</div>
+<!-- value between -10 to 10 -->
+<div>
+    <label for="range">value between -10 to 10</label>
+    <input id="range" type="number">
+    <p id="range-error" style="color: red;"></p>
+</div>
+<!-- does not let you type the letter T -->
+<div>
+    <label for="no-t">does not let you type the letter T</label>
+    <input id="no-t" type="text">
+    <p id="no-t-error" style="color: red;"></p>
+</div>
+<!--  required -->
+<div>
+    <label for="checkbox1">Required</label>
+    <input id="checkbox1" class="required" type="checkbox">
+    <p id="checkbox1-error" style="color: red;"></p>
+</div>
+<div>
+    <label for="checkbox2">Optional</label>
+    <input id="checkbox2" type="checkbox">
+    <p id="checkbox2-error" style="color: red;"></p>
+</div>
+<!-- required if checkbox 2 is required -->
+<div>
+    <label for="check-text">required if checkbox 2 is required</label>
+    <input id="check-text" type="text">
+    <p id="check-text-error" style="color: red;"></p>
+</div>
+
+<!-- "password field" that  -->
+<div>
+    <label for="password">Password</label>
+    <input id="password" type="text">
+    <p id="password-error" style="color: red;" class="error-message"></p>
+</div>
+<input type="submit">
